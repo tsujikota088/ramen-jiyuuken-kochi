@@ -51,8 +51,8 @@ https://tsujikota088.github.io/ramen-jiyuuken-kochi/
 
 ### 元サイト
 
-![元サイト](./images/before.png)
+![元サイト](./img/ラーメン自由軒_元サイト.png)
 
 ### リニューアル後
 
-![リニューアル後](./images/after.png)
+![リニューアル後](./img/ラーメン自由軒_リニューアル後.png)
