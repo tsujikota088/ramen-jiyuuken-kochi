@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+/* .site-title {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 900;
+  font-size: 64px;
+  transform: scaleY(1.05);
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  color: #242321;
+  background-color: #ffffff;
+  font-family: "Noto Serif JP", "Yu Mincho", serif;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  padding: 0 5%;
+}
+
+.site-title {
+  font-weight: 800;
+  transform: scaleY(1.05);
+}
+
+.hero-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+#introduction {
+  padding: 72px 20px 64px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#introduction p {
+  margin: 0;
+}
+
+.menu-list,
+.shop-list {
+  width: min(100% - 48px, 1040px);
+  margin-inline: auto;
+}
+
+.menu-list {
+  display: grid;
+  gap: 64px;
+  padding-bottom: 104px;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  gap: 64px;
+}
+
+.menu-image img {
+  width: 100%;
+}
+
+.menu-copy h2 {
+  margin: 0 0 16px;
+}
+
+.menu-copy p {
+  margin: 0;
+  color: #77736d;
+}
+
+.menu-copy .recommendation {
+  margin-bottom: 8px;
+  color: #8a3d2b;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.section-title {
+  margin: 0 0 48px;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+}
+
+#shops {
+  padding: 8px 24px 112px;
+}
+
+.shop-list {
+  display: grid;
+  gap: 64px;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  gap: 64px;
+}
+
+.shop-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.map-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  margin-top: 16px;
+  padding: 0 20px;
+  border: 1px solid #e6e3df;
+  color: #242321;
+  background: #f5f4f2;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.map-button span {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.shop-info h3 {
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e6e3df;
+  font-size: 1.25rem;
+}
+
+.shop-info dl {
+  margin: 0;
+}
+.shop-info dt {
+  margin-top: 12px;
+  font-weight: bold;
+}
+.shop-info dt:first-of-type {
+  margin-top: 0;
+}
+.shop-info dd {
+  margin: 0;
+}
+.shop-info dd a {
+  color: #8a3d2b;
+  text-decoration: underline;
+}
+
+#holiday {
+  padding: 0 24px 96px;
+  text-align: center;
+}
+
+#holiday .section-title {
+  margin-bottom: 12px;
+}
+
+.holiday-note {
+  margin: 0 0 28px;
+  color: #77736d;
+}
+
+.calendar-image {
+  margin-inline: auto;
+}
+
+footer {
+  padding: 40px 24px 24px;
+  background-color: #f5f4f2;
+  text-align: center;
+}
+
+.instagram-logo {
+  margin-inline: auto;
+}
+
+@media (max-width: 1024px) {
+  .site-header {
+    min-height: 56px;
+    padding-inline: 20px;
+  }
+
+  .hero-image {
+    max-height: 480px;
+  }
+
+  .introduction {
+    padding: 52px 20px 48px;
+  }
+  
+  .menu-list,
+  .shop-list {
+    width: min(100% - 40px, 520px);
+  }
+
+  .menu-list {
+    gap: 40px;
+    padding-bottom: 72px;
+  }
+
+  .menu-item,
+  .shop {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .shops {
+    padding: 0 20px 80px;
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+    font-size: 1.3rem;
+  }
+
+  .shop-list {
+    gap: 40px;
+  }
+
+  .shop-info h3 {
+    margin-bottom: 12px;
+  }
+
+  #holiday {
+    padding: 0 20px 72px;
+  }
+}
